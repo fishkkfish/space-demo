@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<!-- saved from url=(0078)file:///C:/Users/publi/Desktop/CCC/WordQuest%20%C2%B7%20Game%20Prototype3.html -->
+<!-- saved from url=(0078)file:///C:/Users/publi/Desktop/CCC/WordQuest%20%C2%B7%20Game%20Prototype4.html -->
 <html lang="zh"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>WordQuest · Game Prototype</title>
-<link href="./index_files/css2" rel="stylesheet">
+<link href="file:///C:/Users/publi/Desktop/CCC/Game%20Prototype_files/css2" rel="stylesheet">
 <style>
 *{box-sizing:border-box;margin:0;padding:0;-webkit-user-select:none;user-select:none;}
 html,body{
@@ -157,6 +157,30 @@ body{
 .acc-tue{background:linear-gradient(90deg,#FF9933,#FFE533);}
 .acc-wed{background:linear-gradient(90deg,#00E078,#43E0F7);}
 .acc-lock{background:rgba(255,255,255,.10);}
+.acc-thu{background:linear-gradient(90deg,#FF6B6B,#FF9933);}
+.acc-fri{background:linear-gradient(90deg,#9459FF,#FFE533);}
+.acc-sat{background:linear-gradient(90deg,#FF6BB3,#FF9933);}
+.acc-sun{background:linear-gradient(90deg,#43E0F7,#FFE533);}
+
+/* ══ SATURDAY – WORD PARTY ══ */
+.sat-card{width:174px;height:70px;border-radius:12px;cursor:pointer;flex-shrink:0;display:flex;flex-direction:column;align-items:center;justify-content:center;transition:transform .2s,border-color .2s,background .3s;}
+.sat-card.sleeping{background:rgba(20,16,50,.75);border:1px solid rgba(255,255,255,.12);}
+.sat-card.sleeping:hover{transform:translateY(-3px);border-color:rgba(255,255,255,.3);}
+@keyframes zzz-float{0%,100%{transform:translateY(0);}50%{transform:translateY(-5px);}}
+.sat-card.awake{border:1px solid;animation:pop .4s;}
+.sat-card-emoji{font-size:28px;line-height:1;}
+.sat-card-word{font-size:12px;font-weight:700;color:#fff;margin-top:3px;letter-spacing:.3px;}
+
+/* ══ SUNDAY – MY COLLECTION ══ */
+.sun-flip-card{height:50px;border-radius:10px;cursor:pointer;perspective:600px;flex-shrink:0;}
+.sun-flip-inner{position:relative;width:100%;height:100%;transform-style:preserve-3d;transition:transform .5s;border-radius:10px;}
+.sun-flip-inner.flipped{transform:rotateY(180deg);}
+.sun-flip-front,.sun-flip-back{position:absolute;inset:0;backface-visibility:hidden;border-radius:10px;display:flex;align-items:center;justify-content:center;}
+.sun-flip-back{transform:rotateY(180deg);justify-content:flex-start;padding:0 12px;}
+.sun-flip-a{background:rgba(0,224,120,.10);border:1px solid rgba(0,224,120,.28);}
+.sun-flip-a-back{background:rgba(0,224,120,.18);border:1px solid rgba(0,224,120,.45);}
+.sun-flip-b{background:rgba(67,224,247,.10);border:1px solid rgba(67,224,247,.28);}
+.sun-flip-b-back{background:rgba(67,224,247,.18);border:1px solid rgba(67,224,247,.45);}
 
 .card-inner{
   position:absolute;left:14.7px;top:10.1px;width:147px;
@@ -1019,17 +1043,17 @@ body{
   </div>
 
   <!-- Floating avatars -->
-  <div class="f-av" style="left:134px;top:129px;width:31px;height:31px;"><img src="./index_files/885dfc3628ad554e336c5dcb594fa141" onerror="this.parentElement.style.background=&#39;linear-gradient(135deg,#43E0F7,#9459FF)&#39;"></div>
-  <div class="f-av" style="left:332px;top:213px;width:38px;height:39px;"><img src="./index_files/48ca6d39da43d2588e0dae1315935e9b" onerror="this.parentElement.style.background=&#39;linear-gradient(135deg,#FF9933,#9459FF)&#39;"></div>
-  <div class="f-av" style="left:566px;top:184px;width:32px;height:31px;"><img src="./index_files/a9442a919dbaecb6deca6af61a0f8ed0" onerror="this.parentElement.style.background=&#39;linear-gradient(135deg,#43E0F7,#275B7E)&#39;"></div>
-  <div class="f-av" style="left:538px;top:283px;width:46px;height:46px;"><img src="./index_files/3c6463e058152ff55e7a8f80559cc935" onerror="this.parentElement.style.background=&#39;linear-gradient(135deg,#FF6BB3,#9459FF)&#39;"></div>
-  <div class="f-av" style="left:742px;top:205px;width:58px;height:58px;"><img src="./index_files/cf4908902ce9ff19fad3f8a98572fd9f" onerror="this.parentElement.style.background=&#39;linear-gradient(135deg,#43E0F7,#9459FF)&#39;"></div>
-  <div class="f-av" style="left:6px;top:197px;width:46px;height:46px;"><img src="./index_files/6d816bd2c9bb2551d5d9e01b83a89631" onerror="this.parentElement.style.background=&#39;linear-gradient(135deg,#FFE533,#FF9933)&#39;"></div>
-  <div class="f-av" style="left:651px;top:98px;width:31px;height:31px;"><img src="./index_files/62b0ffacff85b3dfd47f215c4bb8608e" onerror="this.parentElement.style.background=&#39;linear-gradient(135deg,#FF9933,#FFE533)&#39;"></div>
+  <div class="f-av" style="left: 134px; top: 129px; width: 31px; height: 31px; background: linear-gradient(135deg, rgb(67, 224, 247), rgb(148, 89, 255));"><img src="file:///C:/Users/publi/Desktop/CCC/Game%20Prototype_files/885dfc3628ad554e336c5dcb594fa141" onerror="this.parentElement.style.background=&#39;linear-gradient(135deg,#43E0F7,#9459FF)&#39;"></div>
+  <div class="f-av" style="left: 332px; top: 213px; width: 38px; height: 39px; background: linear-gradient(135deg, rgb(255, 153, 51), rgb(148, 89, 255));"><img src="file:///C:/Users/publi/Desktop/CCC/Game%20Prototype_files/48ca6d39da43d2588e0dae1315935e9b" onerror="this.parentElement.style.background=&#39;linear-gradient(135deg,#FF9933,#9459FF)&#39;"></div>
+  <div class="f-av" style="left: 566px; top: 184px; width: 32px; height: 31px; background: linear-gradient(135deg, rgb(67, 224, 247), rgb(39, 91, 126));"><img src="file:///C:/Users/publi/Desktop/CCC/Game%20Prototype_files/a9442a919dbaecb6deca6af61a0f8ed0" onerror="this.parentElement.style.background=&#39;linear-gradient(135deg,#43E0F7,#275B7E)&#39;"></div>
+  <div class="f-av" style="left: 538px; top: 283px; width: 46px; height: 46px; background: linear-gradient(135deg, rgb(255, 107, 179), rgb(148, 89, 255));"><img src="file:///C:/Users/publi/Desktop/CCC/Game%20Prototype_files/3c6463e058152ff55e7a8f80559cc935" onerror="this.parentElement.style.background=&#39;linear-gradient(135deg,#FF6BB3,#9459FF)&#39;"></div>
+  <div class="f-av" style="left: 742px; top: 205px; width: 58px; height: 58px; background: linear-gradient(135deg, rgb(67, 224, 247), rgb(148, 89, 255));"><img src="file:///C:/Users/publi/Desktop/CCC/Game%20Prototype_files/cf4908902ce9ff19fad3f8a98572fd9f" onerror="this.parentElement.style.background=&#39;linear-gradient(135deg,#43E0F7,#9459FF)&#39;"></div>
+  <div class="f-av" style="left: 6px; top: 197px; width: 46px; height: 46px; background: linear-gradient(135deg, rgb(255, 229, 51), rgb(255, 153, 51));"><img src="file:///C:/Users/publi/Desktop/CCC/Game%20Prototype_files/6d816bd2c9bb2551d5d9e01b83a89631" onerror="this.parentElement.style.background=&#39;linear-gradient(135deg,#FFE533,#FF9933)&#39;"></div>
+  <div class="f-av" style="left: 651px; top: 98px; width: 31px; height: 31px; background: linear-gradient(135deg, rgb(255, 153, 51), rgb(255, 229, 51));"><img src="file:///C:/Users/publi/Desktop/CCC/Game%20Prototype_files/62b0ffacff85b3dfd47f215c4bb8608e" onerror="this.parentElement.style.background=&#39;linear-gradient(135deg,#FF9933,#FFE533)&#39;"></div>
 
   <!-- Top navbar -->
   <div id="h-nav">
-    <div id="h-title">Week 1 · Apple &amp; Friends</div>
+    <div id="h-title">Week 1 · Fruits &amp; Animals</div>
     <div id="h-streak">🔥 7</div>
     <div id="h-xp">⭐ 240 XP</div>
     <div id="h-avatar">👩</div>
@@ -1039,76 +1063,14 @@ body{
   <div id="h-week">
     <div class="hwp"><div class="hwp-bar done"></div><div class="hwp-lbl done">MON</div></div>
     <div class="hwp"><div class="hwp-bar done"></div><div class="hwp-lbl done">TUE</div></div>
-    <div class="hwp"><div class="hwp-bar today"></div><div class="hwp-lbl today">WED</div></div>
-    <div class="hwp"><div class="hwp-bar"></div><div class="hwp-lbl">THU</div></div>
+    <div class="hwp"><div class="hwp-bar done"></div><div class="hwp-lbl done">WED</div></div>
+    <div class="hwp"><div class="hwp-bar today"></div><div class="hwp-lbl today">THU</div></div>
     <div class="hwp"><div class="hwp-bar"></div><div class="hwp-lbl">FRI</div></div>
   </div>
 
-  <!-- Scrollable card strip -->
+  <!-- Scrollable card strip — populated by initHomeUnlocks() -->
   <div id="h-scroll" class="">
-    <div id="h-cards">
-
-      <!-- Monday – done -->
-      <div class="day-card done" onclick="startLesson(&#39;mon&#39;)">
-        <div class="card-accent acc-mon"></div>
-        <div class="card-inner">
-          <div class="card-day">Monday</div>
-          <div class="card-img-wrap"><div style="display:flex;align-items:center;justify-content:center;height:100%;font-size:72px;">🍎</div></div>
-        </div>
-        <div class="card-type-lbl">Spell It!</div>
-        <div class="card-xp">+80 XP</div>
-        <div class="card-done-mark">✓</div>
-      </div>
-
-      <!-- Tuesday – done -->
-      <div class="day-card done" onclick="startLesson(&#39;tue&#39;)">
-        <div class="card-accent acc-tue"></div>
-        <div class="card-inner">
-          <div class="card-day">Tuesday</div>
-          <div class="card-img-wrap"><div style="display:flex;align-items:center;justify-content:center;height:100%;font-size:72px;">🔊</div></div>
-        </div>
-        <div class="card-type-lbl">Hear It!</div>
-        <div class="card-xp">+80 XP</div>
-        <div class="card-done-mark">✓</div>
-      </div>
-
-      <!-- Wednesday – TODAY unlocked -->
-      <div class="day-card today" onclick="startLesson(&#39;wed&#39;)">
-        <div class="card-accent acc-wed"></div>
-        <div class="card-inner">
-          <div class="card-day">Wednesday</div>
-          <div class="card-img-wrap"><div style="display:flex;align-items:center;justify-content:center;height:100%;font-size:72px;">🧩</div></div>
-        </div>
-        <div class="card-type-lbl">Build It!</div>
-        <div class="card-xp">+100 XP</div>
-        <div class="card-today-tag">TODAY</div>
-      </div>
-
-      <!-- Thursday – locked -->
-      <div class="day-card locked">
-        <div class="card-accent acc-lock"></div>
-        <div class="card-inner">
-          <div class="card-day">Thursday</div>
-          <div class="card-img-wrap"><div style="display:flex;align-items:center;justify-content:center;height:100%;font-size:72px;opacity:.3;">🌐</div></div>
-        </div>
-        <div class="card-type-lbl" style="opacity:.35">Translate It!</div>
-        <div class="card-xp" style="opacity:.3">+100 XP</div>
-        <div class="card-lock">🔒</div>
-      </div>
-
-      <!-- Friday – locked -->
-      <div class="day-card locked">
-        <div class="card-accent acc-lock"></div>
-        <div class="card-inner">
-          <div class="card-day">Friday</div>
-          <div class="card-img-wrap"><div style="display:flex;align-items:center;justify-content:center;height:100%;font-size:72px;opacity:.3;">📖</div></div>
-        </div>
-        <div class="card-type-lbl" style="opacity:.35">Story Time!</div>
-        <div class="card-xp" style="opacity:.3">+120 XP</div>
-        <div class="card-lock">🔒</div>
-      </div>
-
-    </div>
+    <div id="h-cards"><div class="day-card done" onclick="startLesson(&#39;mon&#39;)"><div class="card-accent acc-mon"></div><div class="card-inner"><div class="card-day">Monday</div><div class="card-img-wrap"><div style="display:flex;align-items:center;justify-content:center;height:100%;font-size:72px">🍎</div></div></div><div class="card-type-lbl">Spell It!</div><div class="card-xp">+100 XP</div><div class="card-done-mark">✓</div></div><div class="day-card done" onclick="startLesson(&#39;tue&#39;)"><div class="card-accent acc-tue"></div><div class="card-inner"><div class="card-day">Tuesday</div><div class="card-img-wrap"><div style="display:flex;align-items:center;justify-content:center;height:100%;font-size:72px">🐶</div></div></div><div class="card-type-lbl">Hear It!</div><div class="card-xp">+100 XP</div><div class="card-done-mark">✓</div></div><div class="day-card done" onclick="startLesson(&#39;wed&#39;)"><div class="card-accent acc-wed"></div><div class="card-inner"><div class="card-day">Wednesday</div><div class="card-img-wrap"><div style="display:flex;align-items:center;justify-content:center;height:100%;font-size:72px">🍎</div></div></div><div class="card-type-lbl">Build It!</div><div class="card-xp">+100 XP</div><div class="card-done-mark">✓</div></div><div class="day-card today" onclick="startLesson(&#39;thu&#39;)"><div class="card-accent acc-thu"></div><div class="card-inner"><div class="card-day">Thursday</div><div class="card-img-wrap"><div style="display:flex;align-items:center;justify-content:center;height:100%;font-size:72px">🐯</div></div></div><div class="card-type-lbl">Translate It!</div><div class="card-xp">+100 XP</div><div class="card-today-tag">TODAY</div></div><div class="day-card locked"><div class="card-accent acc-lock"></div><div class="card-inner"><div class="card-day">Friday</div><div class="card-img-wrap"><div style="display:flex;align-items:center;justify-content:center;height:100%;font-size:72px;opacity:.3">📖</div></div></div><div class="card-type-lbl" style="opacity:.35">Story Time!</div><div class="card-xp" style="opacity:.3">+120 XP</div><div class="card-lock">🔒</div></div><div class="day-card locked"><div class="card-accent acc-lock"></div><div class="card-inner"><div class="card-day">Saturday</div><div class="card-img-wrap"><div style="display:flex;align-items:center;justify-content:center;height:100%;font-size:72px;opacity:.3">🎉</div></div></div><div class="card-type-lbl" style="opacity:.35">Word Party!</div><div class="card-xp" style="opacity:.3">Free!</div><div class="card-lock">🔒</div></div><div class="day-card locked"><div class="card-accent acc-lock"></div><div class="card-inner"><div class="card-day">Sunday</div><div class="card-img-wrap"><div style="display:flex;align-items:center;justify-content:center;height:100%;font-size:72px;opacity:.3">🌟</div></div></div><div class="card-type-lbl" style="opacity:.35">My Collection</div><div class="card-xp" style="opacity:.3">Free!</div><div class="card-lock">🔒</div></div></div>
   </div>
 </div>
 
@@ -1188,15 +1150,15 @@ body{
 
   <div id="tue-mcard">
     <div class="mc-glow"></div>
-    <div id="tue-q">?</div>
-    <div id="tue-revealed"></div>
-    <div class="mc-ph-bg"><div id="tue-ph">/æpəl/</div></div>
+    <div id="tue-q" style="display: block;">?</div>
+    <div id="tue-revealed" style="display: none;"></div>
+    <div class="mc-ph-bg"><div id="tue-ph">/kæt/</div></div>
   </div>
 
   <div id="tue-p-outer"></div>
   <div id="tue-p-mid"></div>
   <div id="tue-p-inner"></div>
-  <button id="tue-play" onclick="playAudio()">▶</button>
+  <button id="tue-play" onclick="playAudio()" class="">▶</button>
 
   <div id="tue-eq">
     <div class="eq-b" style="height:6px"></div>
@@ -1210,28 +1172,32 @@ body{
   <div id="tue-audio-hint">Tap ▶ to hear the word</div>
 
   <div class="ic" id="ic-0" style="left:316px;top:176px;" onclick="selectChoice(0)">
-    <div class="ic-img" id="ic-img-0" style="background:rgba(46,217,115,.12)"></div>
+    <div class="ic-img" id="ic-img-0" style="background: rgba(180, 140, 80, 0.12);">🐶</div>
     <div class="ic-div"></div>
-    <div class="ic-lbl" id="ic-lbl-0"></div>
+    <div class="ic-lbl" id="ic-lbl-0">dog</div>
   </div>
   <div class="ic" id="ic-1" style="left:480px;top:176px;" onclick="selectChoice(1)">
-    <div class="ic-img" id="ic-img-1" style="background:rgba(255,229,51,.12)"></div>
+    <div class="ic-img" id="ic-img-1" style="background: rgba(180, 120, 60, 0.12);">🐻</div>
     <div class="ic-div"></div>
-    <div class="ic-lbl" id="ic-lbl-1"></div>
+    <div class="ic-lbl" id="ic-lbl-1">bear</div>
   </div>
   <div class="ic" id="ic-2" style="left:316px;top:284px;" onclick="selectChoice(2)">
-    <div class="ic-img" id="ic-img-2" style="background:rgba(255,153,51,.12)"></div>
+    <div class="ic-img" id="ic-img-2" style="background: rgba(255, 200, 100, 0.12);">🐱</div>
     <div class="ic-div"></div>
-    <div class="ic-lbl" id="ic-lbl-2"></div>
+    <div class="ic-lbl" id="ic-lbl-2">cat</div>
   </div>
   <div class="ic" id="ic-3" style="left:480px;top:284px;" onclick="selectChoice(3)">
-    <div class="ic-img" id="ic-img-3" style="background:rgba(148,89,255,.12)"></div>
+    <div class="ic-img" id="ic-img-3" style="background: rgba(255, 180, 200, 0.12);">🐰</div>
     <div class="ic-div"></div>
-    <div class="ic-lbl" id="ic-lbl-3"></div>
+    <div class="ic-lbl" id="ic-lbl-3">rabbit</div>
   </div>
   <div id="tue-sel-hint">Select the image you heard ↑</div>
-  <button id="tue-confirm" onclick="confirmChoice()">Confirm ✓</button>
-  <div class="rpanel" id="tue-rp"></div>
+  <button id="tue-confirm" onclick="confirmChoice()" class="">Confirm ✓</button>
+  <div class="rpanel" id="tue-rp"><div class="rp-scroll">
+    <div class="rp-lbl">Lives</div><div class="rp-hearts"><div class="rp-heart"></div><div class="rp-heart"></div><div class="rp-heart"></div></div>
+    <div class="rp-xp-lbl">XP &nbsp;120 / 200</div>
+    <div class="rp-xp-track"><div class="rp-xp-fill xpf-tue" style="width:60%"></div></div>
+    <div class="rp-sep"></div><div class="rp-week">This Week</div><div class="rp-row cur-tue"><div class="rp-bar"></div><div class="rp-dot"></div><span class="rp-en">cat</span><span class="rp-cn">猫</span></div><div class="rp-row"><div class="rp-bar"></div><div class="rp-dot"></div><span class="rp-en">dog</span><span class="rp-cn">狗</span></div><div class="rp-row"><div class="rp-bar"></div><div class="rp-dot"></div><span class="rp-en">bird</span><span class="rp-cn">鸟</span></div><div class="rp-row"><div class="rp-bar"></div><div class="rp-dot"></div><span class="rp-en">fish</span><span class="rp-cn">鱼</span></div><div class="rp-row"><div class="rp-bar"></div><div class="rp-dot"></div><span class="rp-en">bear</span><span class="rp-cn">熊</span></div><div class="rp-row"><div class="rp-bar"></div><div class="rp-dot"></div><span class="rp-en">lion</span><span class="rp-cn">狮子</span></div><div class="rp-row"><div class="rp-bar"></div><div class="rp-dot"></div><span class="rp-en">tiger</span><span class="rp-cn">老虎</span></div><div class="rp-row"><div class="rp-bar"></div><div class="rp-dot"></div><span class="rp-en">rabbit</span><span class="rp-cn">兔子</span></div><div class="rp-row"><div class="rp-bar"></div><div class="rp-dot"></div><span class="rp-en">elephant</span><span class="rp-cn">大象</span></div><div class="rp-row"><div class="rp-bar"></div><div class="rp-dot"></div><span class="rp-en">horse</span><span class="rp-cn">马</span></div></div></div>
 </div>
 
 <!-- ═══════════════ WEDNESDAY – BUILD IT! ═══════════════ -->
@@ -1279,29 +1245,33 @@ body{
   <div class="lesson-nav">
     <button class="btn-back" onclick="goHome()">←</button>
     <div class="nav-ttl">Thursday · Translate It!</div>
-    <div class="streak-bdg" id="thu-streak">🔥 x3</div>
+    <div class="streak-bdg" id="thu-streak">🔥 x13</div>
   </div>
-  <div class="prog-track"><div class="prog-fill prog-thu" id="thu-prog" style="width:0%"></div></div>
+  <div class="prog-track"><div class="prog-fill prog-thu" id="thu-prog" style="width: 100%;"></div></div>
 
   <!-- Question card -->
   <div id="thu-qcard">
-    <div id="thu-q-emoji">🍎</div>
+    <div id="thu-q-emoji">🐴</div>
     <div class="thu-q-text">
-      <div id="thu-q-word">apple</div>
-      <div id="thu-q-ph">/æpəl/</div>
+      <div id="thu-q-word">马</div>
+      <div id="thu-q-ph">/hɔːrs/</div>
     </div>
-    <div id="thu-q-dir">EN → 中文</div>
+    <div id="thu-q-dir">中文 → EN</div>
   </div>
-  <div id="thu-round">1 / 8</div>
+  <div id="thu-round">10 / 10</div>
 
   <!-- 4 choices: 2×2 grid -->
-  <button class="thu-choice" id="thu-c0" style="left:24px;top:170px;" onclick="selectThu(0)"></button>
-  <button class="thu-choice" id="thu-c1" style="left:260px;top:170px;" onclick="selectThu(1)"></button>
-  <button class="thu-choice" id="thu-c2" style="left:24px;top:254px;" onclick="selectThu(2)"></button>
-  <button class="thu-choice" id="thu-c3" style="left:260px;top:254px;" onclick="selectThu(3)"></button>
+  <button class="thu-choice" id="thu-c0" style="left:24px;top:170px;" onclick="selectThu(0)">tiger</button>
+  <button class="thu-choice selected correct-sel" id="thu-c1" style="left:260px;top:170px;" onclick="selectThu(1)">horse</button>
+  <button class="thu-choice" id="thu-c2" style="left:24px;top:254px;" onclick="selectThu(2)">elephant</button>
+  <button class="thu-choice" id="thu-c3" style="left:260px;top:254px;" onclick="selectThu(3)">lion</button>
 
-  <button id="thu-confirm" onclick="confirmThu()">Confirm ✓</button>
-  <div class="rpanel" id="thu-rp"></div>
+  <button id="thu-confirm" onclick="confirmThu()" class="">Confirm ✓</button>
+  <div class="rpanel" id="thu-rp"><div class="rp-scroll">
+    <div class="rp-lbl">Lives</div><div class="rp-hearts"><div class="rp-heart"></div><div class="rp-heart"></div><div class="rp-heart"></div></div>
+    <div class="rp-xp-lbl">XP &nbsp;200 / 200</div>
+    <div class="rp-xp-track"><div class="rp-xp-fill xpf-thu" style="width:100%"></div></div>
+    <div class="rp-sep"></div><div class="rp-week">This Week</div><div class="rp-row done"><div class="rp-bar"></div><div class="rp-dot"></div><span class="rp-en">cat</span><span class="rp-cn">猫</span></div><div class="rp-row done"><div class="rp-bar"></div><div class="rp-dot"></div><span class="rp-en">dog</span><span class="rp-cn">狗</span></div><div class="rp-row done"><div class="rp-bar"></div><div class="rp-dot"></div><span class="rp-en">bird</span><span class="rp-cn">鸟</span></div><div class="rp-row done"><div class="rp-bar"></div><div class="rp-dot"></div><span class="rp-en">fish</span><span class="rp-cn">鱼</span></div><div class="rp-row done"><div class="rp-bar"></div><div class="rp-dot"></div><span class="rp-en">bear</span><span class="rp-cn">熊</span></div><div class="rp-row done"><div class="rp-bar"></div><div class="rp-dot"></div><span class="rp-en">lion</span><span class="rp-cn">狮子</span></div><div class="rp-row done"><div class="rp-bar"></div><div class="rp-dot"></div><span class="rp-en">tiger</span><span class="rp-cn">老虎</span></div><div class="rp-row done"><div class="rp-bar"></div><div class="rp-dot"></div><span class="rp-en">rabbit</span><span class="rp-cn">兔子</span></div><div class="rp-row done"><div class="rp-bar"></div><div class="rp-dot"></div><span class="rp-en">elephant</span><span class="rp-cn">大象</span></div><div class="rp-row done"><div class="rp-bar"></div><div class="rp-dot"></div><span class="rp-en">horse</span><span class="rp-cn">马</span></div></div></div>
 </div>
 
 <!-- ═══════════════ FRIDAY – STORY TIME! ═══════════════ -->
@@ -1332,18 +1302,62 @@ body{
   <div class="rpanel" id="fri-rp"></div>
 </div>
 
+<!-- ═══════════════ SATURDAY – WORD PARTY! ═══════════════ -->
+<div id="lesson-sat" class="screen">
+  <div class="screen-bg"></div>
+  <div class="gblob" style="left:600px;top:-120px;width:340px;height:340px;background:#FF6BB3;opacity:.07;"></div>
+  <div class="gblob" style="left:-80px;top:230px;width:270px;height:270px;background:#FF9933;opacity:.06;"></div>
+
+  <div class="lesson-nav">
+    <button class="btn-back" onclick="goHome()">←</button>
+    <div class="nav-ttl">Saturday · Word Party!</div>
+    <div class="streak-bdg" id="sat-counter" style="background:rgba(255,107,179,.18);border-color:rgba(255,107,179,.3);color:#FF6BB3;">0 / 20</div>
+  </div>
+
+  <div style="position:absolute;left:0;top:50px;width:932px;text-align:center;font-size:13px;color:rgba(255,255,255,.5);z-index:5;padding:6px 0;">
+    Wake up the sleeping words! Tap each card 🎉
+  </div>
+
+  <div id="sat-grid" style="position:absolute;left:14px;top:76px;width:904px;bottom:8px;display:flex;flex-wrap:wrap;gap:8px;align-content:flex-start;z-index:5;overflow-y:auto;scrollbar-width:none;"></div>
+</div>
+
+<!-- ═══════════════ SUNDAY – MY COLLECTION ═══════════════ -->
+<div id="lesson-sun" class="screen">
+  <div class="screen-bg"></div>
+  <div class="gblob" style="left:580px;top:-120px;width:320px;height:320px;background:#43E0F7;opacity:.07;"></div>
+  <div class="gblob" style="left:-80px;top:220px;width:270px;height:270px;background:#FFE533;opacity:.05;"></div>
+
+  <div class="lesson-nav">
+    <button class="btn-back" onclick="goHome()">←</button>
+    <div class="nav-ttl">Sunday · My Collection</div>
+    <div class="streak-bdg" style="background:rgba(67,224,247,.18);border-color:rgba(67,224,247,.3);color:#43E0F7;">Week 1</div>
+  </div>
+
+  <div style="position:absolute;left:14px;top:56px;width:904px;bottom:6px;display:flex;gap:14px;z-index:5;">
+    <div style="flex:1;display:flex;flex-direction:column;min-width:0;">
+      <div style="font-size:11px;font-weight:700;color:rgba(0,224,120,.85);text-transform:uppercase;letter-spacing:.6px;padding:5px 0 7px;">Group A · Fruits 🍎</div>
+      <div id="sun-col-a" style="display:flex;flex-direction:column;gap:6px;overflow-y:auto;scrollbar-width:none;flex:1;padding-right:4px;"></div>
+    </div>
+    <div style="width:1px;background:rgba(255,255,255,.08);flex-shrink:0;margin-top:24px;"></div>
+    <div style="flex:1;display:flex;flex-direction:column;min-width:0;">
+      <div style="font-size:11px;font-weight:700;color:rgba(67,224,247,.85);text-transform:uppercase;letter-spacing:.6px;padding:5px 0 7px;">Group B · Animals 🐾</div>
+      <div id="sun-col-b" style="display:flex;flex-direction:column;gap:6px;overflow-y:auto;scrollbar-width:none;flex:1;padding-left:4px;"></div>
+    </div>
+  </div>
+</div>
+
 <!-- ═══════════════ COMPLETE ═══════════════ -->
 <div id="complete" class="screen">
   <div class="cbox">
     <div class="c-emo">🎉</div>
-    <div class="c-title" id="c-title">Lesson Complete!</div>
-    <div class="c-sub" id="c-sub">Great work! You're on fire!</div>
+    <div class="c-title thu" id="c-title">Lesson Complete!</div>
+    <div class="c-sub" id="c-sub">Translation master! Fantastic! 🌐</div>
     <div class="c-stats">
-      <div class="c-stat"><div class="c-val" id="c-words">8</div><div class="c-lbl">Words Done</div></div>
-      <div class="c-stat"><div class="c-val" id="c-xp">+80</div><div class="c-lbl">XP Gained</div></div>
-      <div class="c-stat"><div class="c-val" id="c-acc">100%</div><div class="c-lbl">Accuracy</div></div>
+      <div class="c-stat"><div class="c-val thu" id="c-words">10</div><div class="c-lbl">Words Done</div></div>
+      <div class="c-stat"><div class="c-val thu" id="c-xp">+80</div><div class="c-lbl">XP Gained</div></div>
+      <div class="c-stat"><div class="c-val thu" id="c-acc">100%</div><div class="c-lbl">Accuracy</div></div>
     </div>
-    <button class="btn-home" id="btn-home-c" onclick="goHome()">← Back to Home</button>
+    <button class="btn-home thu" id="btn-home-c" onclick="goHome()">← Back to Home</button>
   </div>
 </div>
 
@@ -1357,47 +1371,82 @@ body{
   </div>
 </div>
 
-<div id="toast"></div>
+<div id="toast" class="">✓ Correct! +10 XP</div>
 
 <script>
 /* ═══════ DATA ═══════ */
-const WORDS = [
-  {en:'apple',  cn:'苹果', emoji:'🍎', ph:'/æpəl/',     dist:['banana','orange','grape']},
-  {en:'banana', cn:'香蕉', emoji:'🍌', ph:'/bəˈnɑːnə/', dist:['apple','orange','grape']},
-  {en:'orange', cn:'橙子', emoji:'🍊', ph:'/ˈɒrɪndʒ/',  dist:['apple','banana','grape']},
-  {en:'grape',  cn:'葡萄', emoji:'🍇', ph:'/ɡreɪp/',    dist:['apple','banana','orange']},
-  {en:'mango',  cn:'芒果', emoji:'🥭', ph:'/ˈmæŋɡoʊ/',  dist:['banana','orange','grape']},
-  {en:'lemon',  cn:'柠檬', emoji:'🍋', ph:'/ˈlemən/',   dist:['apple','mango','grape']},
-  {en:'peach',  cn:'桃子', emoji:'🍑', ph:'/piːtʃ/',    dist:['apple','banana','grape']},
-  {en:'cherry', cn:'樱桃', emoji:'🍒', ph:'/ˈtʃɛri/',   dist:['apple','peach','grape']},
+/* Week 1 A — Fruits (Mon / Wed) */
+const WEEK1_A = [
+  {en:'apple',      cn:'苹果', emoji:'🍎', ph:'/ˈæpəl/',       dist:['banana','orange','grape']},
+  {en:'banana',     cn:'香蕉', emoji:'🍌', ph:'/bəˈnɑːnə/',    dist:['apple','orange','mango']},
+  {en:'orange',     cn:'橙子', emoji:'🍊', ph:'/ˈɒrɪndʒ/',     dist:['apple','banana','grape']},
+  {en:'grape',      cn:'葡萄', emoji:'🍇', ph:'/ɡreɪp/',       dist:['apple','cherry','lemon']},
+  {en:'mango',      cn:'芒果', emoji:'🥭', ph:'/ˈmæŋɡoʊ/',     dist:['banana','orange','lemon']},
+  {en:'lemon',      cn:'柠檬', emoji:'🍋', ph:'/ˈlemən/',      dist:['mango','orange','cherry']},
+  {en:'peach',      cn:'桃子', emoji:'🍑', ph:'/piːtʃ/',       dist:['cherry','mango','grape']},
+  {en:'cherry',     cn:'樱桃', emoji:'🍒', ph:'/ˈtʃeri/',      dist:['peach','grape','lemon']},
+  {en:'strawberry', cn:'草莓', emoji:'🍓', ph:'/ˈstrɔːberi/',  dist:['cherry','peach','grape']},
+  {en:'watermelon', cn:'西瓜', emoji:'🍉', ph:'/ˈwɔːtərmelən/',dist:['mango','orange','banana']},
 ];
-const EMOJI = {apple:'🍎',banana:'🍌',orange:'🍊',grape:'🍇',mango:'🥭',lemon:'🍋',peach:'🍑',cherry:'🍒'};
-const IC_BG = {apple:'rgba(46,217,115,.12)',banana:'rgba(255,229,51,.12)',orange:'rgba(255,153,51,.12)',grape:'rgba(148,89,255,.12)',mango:'rgba(255,193,7,.12)',lemon:'rgba(255,235,59,.12)',peach:'rgba(255,138,101,.12)',cherry:'rgba(255,82,82,.12)'};
+/* Week 1 B — Animals (Tue / Thu) */
+const WEEK1_B = [
+  {en:'cat',      cn:'猫',   emoji:'🐱', ph:'/kæt/',        dist:['dog','rabbit','bear']},
+  {en:'dog',      cn:'狗',   emoji:'🐶', ph:'/dɒɡ/',        dist:['cat','bear','lion']},
+  {en:'bird',     cn:'鸟',   emoji:'🐦', ph:'/bɜːrd/',      dist:['fish','rabbit','cat']},
+  {en:'fish',     cn:'鱼',   emoji:'🐟', ph:'/fɪʃ/',        dist:['bird','cat','dog']},
+  {en:'bear',     cn:'熊',   emoji:'🐻', ph:'/beər/',       dist:['lion','tiger','elephant']},
+  {en:'lion',     cn:'狮子', emoji:'🦁', ph:'/ˈlaɪən/',     dist:['tiger','bear','elephant']},
+  {en:'tiger',    cn:'老虎', emoji:'🐯', ph:'/ˈtaɪɡər/',    dist:['lion','bear','horse']},
+  {en:'rabbit',   cn:'兔子', emoji:'🐰', ph:'/ˈræbɪt/',     dist:['cat','bird','dog']},
+  {en:'elephant', cn:'大象', emoji:'🐘', ph:'/ˈelɪfənt/',   dist:['bear','lion','tiger']},
+  {en:'horse',    cn:'马',   emoji:'🐴', ph:'/hɔːrs/',      dist:['tiger','lion','elephant']},
+];
+const EMOJI = {
+  apple:'🍎',banana:'🍌',orange:'🍊',grape:'🍇',mango:'🥭',lemon:'🍋',peach:'🍑',cherry:'🍒',strawberry:'🍓',watermelon:'🍉',
+  cat:'🐱',dog:'🐶',bird:'🐦',fish:'🐟',bear:'🐻',lion:'🦁',tiger:'🐯',rabbit:'🐰',elephant:'🐘',horse:'🐴'
+};
+const IC_BG = {
+  apple:'rgba(46,217,115,.12)',banana:'rgba(255,229,51,.12)',orange:'rgba(255,153,51,.12)',grape:'rgba(148,89,255,.12)',
+  mango:'rgba(255,193,7,.12)',lemon:'rgba(255,235,59,.12)',peach:'rgba(255,138,101,.12)',cherry:'rgba(255,82,82,.12)',
+  strawberry:'rgba(255,100,130,.12)',watermelon:'rgba(100,200,100,.12)',
+  cat:'rgba(255,200,100,.12)',dog:'rgba(180,140,80,.12)',bird:'rgba(100,180,255,.12)',fish:'rgba(50,150,255,.12)',
+  bear:'rgba(180,120,60,.12)',lion:'rgba(255,160,0,.12)',tiger:'rgba(255,120,0,.12)',
+  rabbit:'rgba(255,180,200,.12)',elephant:'rgba(150,150,200,.12)',horse:'rgba(200,160,100,.12)'
+};
 
-/* Friday story — 8 blanks in order: apple,banana,orange,grape,mango,lemon,peach,cherry */
+/* Friday story — 8 blanks mixing A+B: bear,rabbit,apple,lemon,dog,bird,mango,tiger */
 const STORY_PARTS = [
-  "Tom went to the market. He picked a big red ",
-  " and a yellow ",
-  ". He also found a juicy ",
-  " and some sweet ",
-  ". Mom blended a tropical ",
-  " smoothie. Grandma squeezed a sour ",
-  " into her tea. Dad found a soft ",
-  " on the top shelf. Little Emma put a bright ",
-  " on her cake! 🎂"
+  "Sam went to the farm. He saw a big ",
+  " near the fence. A little ",
+  " hopped past. He picked a red ",
+  " from the tree and a sour ",
+  " on the ground. Then a friendly ",
+  " ran over wagging its tail. High above, a ",
+  " sang sweetly. Sam packed a juicy ",
+  " in his basket when suddenly a striped ",
+  " appeared at the forest edge!"
 ];
-const STORY_ANSWERS = ['apple','banana','orange','grape','mango','lemon','peach','cherry'];
+const STORY_ANSWERS = ['bear','rabbit','apple','lemon','dog','bird','mango','tiger'];
+
+/* ═══════ HELPERS ═══════ */
+function getWords(day) {
+  if (day === 'mon' || day === 'wed') return WEEK1_A;
+  if (day === 'tue' || day === 'thu') return WEEK1_B;
+  if (day === 'fri') return [...WEEK1_A, ...WEEK1_B];
+  return [];
+}
 
 /* ═══════ STATE ═══════ */
 let gs = {};
 function resetState(lesson) {
   gs = {
     lesson, wordIdx:0, lives:3, xp:120, streak:3,
+    words: getWords(lesson),
     typed:[], canType:true,
     audioPlayed:false, selectedIdx:null, correctIdx:null, canSelect:false,
     correct:0, wrong:0, done:[],
     tiles:[], placed:[],
-    storyPlaced: new Array(8).fill(null),
+    storyPlaced: new Array(STORY_ANSWERS.length).fill(null),
     fridayWordBank:[]
   };
 }
@@ -1419,6 +1468,60 @@ function startLesson(day) {
   else if (day === 'wed') initWed();
   else if (day === 'thu') initThu();
   else if (day === 'fri') initFri();
+  else if (day === 'sat') initSat();
+  else if (day === 'sun') initSun();
+}
+
+/* ═══════ HOME UNLOCKS ═══════ */
+function initHomeUnlocks() {
+  const d = new Date().getDay(); // 0=Sun,1=Mon,...,6=Sat
+  const CARDS = [
+    {day:'mon', label:'Monday',    emoji:'🍎', type:'Spell It!',     xp:'+100 XP', accent:'acc-mon'},
+    {day:'tue', label:'Tuesday',   emoji:'🐶', type:'Hear It!',      xp:'+100 XP', accent:'acc-tue'},
+    {day:'wed', label:'Wednesday', emoji:'🍎', type:'Build It!',     xp:'+100 XP', accent:'acc-wed'},
+    {day:'thu', label:'Thursday',  emoji:'🐯', type:'Translate It!', xp:'+100 XP', accent:'acc-thu'},
+    {day:'fri', label:'Friday',    emoji:'📖', type:'Story Time!',   xp:'+120 XP', accent:'acc-fri'},
+    {day:'sat', label:'Saturday',  emoji:'🎉', type:'Word Party!',   xp:'Free!',   accent:'acc-sat'},
+    {day:'sun', label:'Sunday',    emoji:'🌟', type:'My Collection', xp:'Free!',   accent:'acc-sun'},
+  ];
+  const unlock = d===1?1 : d===2?2 : d===3?3 : d===4?4 : d===5?5 : d===6?6 : 7;
+  const container = document.getElementById('h-cards');
+  container.innerHTML = '';
+  CARDS.forEach((c, i) => {
+    const isUnlocked = i < unlock;
+    const isToday = (d===1&&i===0)||(d===2&&i===1)||(d===3&&i===2)||(d===4&&i===3)||(d===5&&i===4)||(d===6&&i===5)||(d===0&&i===6);
+    const isDone = isUnlocked && !isToday;
+    const cls = 'day-card' + (isDone?' done':isToday?' today':' locked');
+    const accent = isUnlocked ? c.accent : 'acc-lock';
+    const onclick = isUnlocked ? ' onclick="startLesson(\''+c.day+'\')"' : '';
+    const emojiOp = isUnlocked ? '' : ';opacity:.3';
+    const labelOp = isUnlocked ? '' : ' style="opacity:.35"';
+    const xpOp = isUnlocked ? '' : ' style="opacity:.3"';
+    let badge = '';
+    if (isDone)      badge = '<div class="card-done-mark">✓</div>';
+    else if (isToday)badge = '<div class="card-today-tag">TODAY</div>';
+    else             badge = '<div class="card-lock">🔒</div>';
+    container.innerHTML +=
+      '<div class="'+cls+'"'+onclick+'>' +
+        '<div class="card-accent '+accent+'"></div>' +
+        '<div class="card-inner">' +
+          '<div class="card-day">'+c.label+'</div>' +
+          '<div class="card-img-wrap"><div style="display:flex;align-items:center;justify-content:center;height:100%;font-size:72px'+emojiOp+'">'+c.emoji+'</div></div>' +
+        '</div>' +
+        '<div class="card-type-lbl"'+labelOp+'>'+c.type+'</div>' +
+        '<div class="card-xp"'+xpOp+'>'+c.xp+'</div>' +
+        badge +
+      '</div>';
+  });
+  // Week progress strip
+  document.querySelectorAll('#h-week .hwp').forEach((hwp, i) => {
+    const bar = hwp.querySelector('.hwp-bar');
+    const lbl = hwp.querySelector('.hwp-lbl');
+    bar.className = 'hwp-bar'; lbl.className = 'hwp-lbl';
+    if (d===0||d===6)      { bar.classList.add('done');  lbl.classList.add('done');  }
+    else if (i < d-1)      { bar.classList.add('done');  lbl.classList.add('done');  }
+    else if (i === d-1)    { bar.classList.add('today'); lbl.classList.add('today'); }
+  });
 }
 
 /* ═══════ HOME DRAG SCROLL ═══════ */
@@ -1445,9 +1548,9 @@ function renderPanel(pfx) {
 
   let progPct;
   if (pfx === 'fri') {
-    progPct = gs.storyPlaced.filter(x => x !== null).length / WORDS.length * 100;
+    progPct = gs.storyPlaced.filter(x => x !== null).length / STORY_ANSWERS.length * 100;
   } else {
-    progPct = gs.done.length / WORDS.length * 100;
+    progPct = gs.done.length / gs.words.length * 100;
   }
   document.getElementById(pfx + '-prog').style.width = progPct + '%';
   document.getElementById(pfx + '-streak').textContent = '🔥 x' + gs.streak;
@@ -1457,7 +1560,7 @@ function renderPanel(pfx) {
     `<div class="rp-heart${i >= gs.lives ? ' lost' : ''}"></div>`
   ).join('');
 
-  const rows = WORDS.map((w, i) => {
+  const rows = gs.words.map((w, i) => {
     const done = gs.done.includes(i);
     const cur = pfx !== 'fri' && i === gs.wordIdx && !done;
     let cls = 'rp-row';
@@ -1477,9 +1580,9 @@ function renderPanel(pfx) {
 function initMon() { loadMonWord(); }
 
 function loadMonWord() {
-  if (gs.wordIdx >= WORDS.length) { showComplete(); return; }
+  if (gs.wordIdx >= gs.words.length) { showComplete(); return; }
   gs.typed = []; gs.canType = true;
-  const w = WORDS[gs.wordIdx];
+  const w = gs.words[gs.wordIdx];
   document.getElementById('mon-emoji').textContent = w.emoji;
   document.getElementById('mon-word-lbl').textContent = w.en;
   document.getElementById('mon-ph').textContent = w.ph;
@@ -1488,7 +1591,7 @@ function loadMonWord() {
 }
 
 function renderSlots() {
-  const w = WORDS[gs.wordIdx];
+  const w = gs.words[gs.wordIdx];
   const container = document.getElementById('mon-slots');
   container.innerHTML = '';
   const n = w.en.length;
@@ -1518,13 +1621,13 @@ function renderSlots() {
 }
 
 function updateCheck() {
-  const w = WORDS[gs.wordIdx];
+  const w = gs.words[gs.wordIdx];
   document.getElementById('mon-check').disabled = gs.typed.length < w.en.length-1;
 }
 
 function typeKey(key) {
   if (!gs.canType || gs.lesson !== 'mon') return;
-  const w = WORDS[gs.wordIdx];
+  const w = gs.words[gs.wordIdx];
   const max = w.en.length-1;
   if (key==='DEL') { if (gs.typed.length>0) { gs.typed.pop(); renderSlots(); updateCheck(); } return; }
   if (key==='OK') { if (gs.typed.length===max) submitMon(); return; }
@@ -1540,7 +1643,7 @@ document.addEventListener('keydown', e => {
 });
 
 function submitMon() {
-  const w = WORDS[gs.wordIdx];
+  const w = gs.words[gs.wordIdx];
   const ans = w.en[0].toUpperCase() + gs.typed.join('');
   const ok = ans.toUpperCase() === w.en.toUpperCase();
   gs.canType = false;
@@ -1564,7 +1667,7 @@ function submitMon() {
 function speakMon() {
   if (!window.speechSynthesis) return;
   speechSynthesis.cancel();
-  const u = new SpeechSynthesisUtterance(WORDS[gs.wordIdx].en);
+  const u = new SpeechSynthesisUtterance(gs.words[gs.wordIdx].en);
   u.lang='en-US'; u.rate=0.85; speechSynthesis.speak(u);
 }
 
@@ -1572,9 +1675,9 @@ function speakMon() {
 function initTue() { loadTueWord(); }
 
 function loadTueWord() {
-  if (gs.wordIdx >= WORDS.length) { showComplete(); return; }
+  if (gs.wordIdx >= gs.words.length) { showComplete(); return; }
   gs.audioPlayed=false; gs.selectedIdx=null; gs.correctIdx=null; gs.canSelect=false;
-  const w = WORDS[gs.wordIdx];
+  const w = gs.words[gs.wordIdx];
   document.getElementById('tue-q').style.display='block';
   document.getElementById('tue-revealed').style.display='none';
   document.getElementById('tue-ph').textContent = w.ph;
@@ -1597,7 +1700,7 @@ function loadTueWord() {
 
 function playAudio() {
   if (gs.lesson !== 'tue') return;
-  const w = WORDS[gs.wordIdx];
+  const w = gs.words[gs.wordIdx];
   const pb = document.getElementById('tue-play');
   pb.className='playing'; pb.textContent='♪';
   document.getElementById('tue-audio-hint').textContent = 'Listening…';
@@ -1630,7 +1733,7 @@ function confirmChoice() {
   gs.canSelect = false;
   document.getElementById('tue-confirm').className = '';
   const ok = gs.selectedIdx === gs.correctIdx;
-  const w = WORDS[gs.wordIdx];
+  const w = gs.words[gs.wordIdx];
   if (ok) {
     document.getElementById('ic-'+gs.selectedIdx).classList.add('correct-sel');
     gs.xp=Math.min(200,gs.xp+10); gs.streak++; gs.correct++; gs.done.push(gs.wordIdx);
@@ -1650,9 +1753,9 @@ function confirmChoice() {
 function initWed() { loadWedWord(); }
 
 function loadWedWord() {
-  if (gs.wordIdx >= WORDS.length) { showComplete(); return; }
+  if (gs.wordIdx >= gs.words.length) { showComplete(); return; }
   gs.canType = true;
-  const w = WORDS[gs.wordIdx];
+  const w = gs.words[gs.wordIdx];
   document.getElementById('wed-emoji').textContent = w.emoji;
   document.getElementById('wed-ph').textContent = w.ph;
   document.getElementById('wed-cn').textContent = w.cn;
@@ -1666,7 +1769,7 @@ function loadWedWord() {
 }
 
 function renderWedSlots() {
-  const w = WORDS[gs.wordIdx];
+  const w = gs.words[gs.wordIdx];
   const container = document.getElementById('wed-slots');
   container.innerHTML = '';
   for (let i=0; i<w.en.length; i++) {
@@ -1701,7 +1804,7 @@ function renderWedPool() {
 function placeWedLetter(tileIdx) {
   if (!gs.canType) return;
   if (gs.placed.includes(tileIdx)) return;
-  if (gs.placed.length >= WORDS[gs.wordIdx].en.length) return;
+  if (gs.placed.length >= gs.words[gs.wordIdx].en.length) return;
   gs.placed.push(tileIdx);
   renderWedSlots();
   renderWedPool();
@@ -1717,11 +1820,11 @@ function removeWedSlot(slotIdx) {
 }
 
 function updateWedCheck() {
-  document.getElementById('wed-check').disabled = gs.placed.length < WORDS[gs.wordIdx].en.length;
+  document.getElementById('wed-check').disabled = gs.placed.length < gs.words[gs.wordIdx].en.length;
 }
 
 function submitWed() {
-  const w = WORDS[gs.wordIdx];
+  const w = gs.words[gs.wordIdx];
   const answer = gs.placed.map(i => gs.tiles[i]).join('').toLowerCase();
   const ok = answer === w.en.toLowerCase();
   gs.canType = false;
@@ -1746,7 +1849,7 @@ function submitWed() {
 function speakWed() {
   if (!window.speechSynthesis) return;
   speechSynthesis.cancel();
-  const u = new SpeechSynthesisUtterance(WORDS[gs.wordIdx].en);
+  const u = new SpeechSynthesisUtterance(gs.words[gs.wordIdx].en);
   u.lang='en-US'; u.rate=0.85; speechSynthesis.speak(u);
 }
 
@@ -1763,8 +1866,8 @@ function clearWedFb() {
 function initThu() { loadThuQ(); }
 
 function loadThuQ() {
-  if (gs.wordIdx >= WORDS.length) { showComplete(); return; }
-  const w = WORDS[gs.wordIdx];
+  if (gs.wordIdx >= gs.words.length) { showComplete(); return; }
+  const w = gs.words[gs.wordIdx];
   const isEN2CN = gs.wordIdx % 2 === 0;
   gs.canSelect = true; gs.selectedIdx = null;
 
@@ -1772,12 +1875,13 @@ function loadThuQ() {
   document.getElementById('thu-q-emoji').textContent = w.emoji;
   document.getElementById('thu-q-word').textContent = isEN2CN ? w.en : w.cn;
   document.getElementById('thu-q-ph').textContent = w.ph;
-  document.getElementById('thu-round').textContent = (gs.wordIdx+1) + ' / ' + WORDS.length;
+  document.getElementById('thu-round').textContent = (gs.wordIdx+1) + ' / ' + gs.words.length;
 
   let correct, distractors;
   if (isEN2CN) {
     correct = w.cn;
-    distractors = w.dist.map(d => WORDS.find(x => x.en === d).cn);
+    const allWords = [...WEEK1_A,...WEEK1_B];
+    distractors = w.dist.map(d => (allWords.find(x => x.en === d) || {cn:d}).cn);
   } else {
     correct = w.en;
     distractors = w.dist.slice();
@@ -1807,7 +1911,7 @@ function confirmThu() {
   gs.canSelect = false;
   document.getElementById('thu-confirm').className = '';
   const ok = gs.selectedIdx === gs.correctIdx;
-  const w = WORDS[gs.wordIdx];
+  const w = gs.words[gs.wordIdx];
   const isEN2CN = gs.wordIdx % 2 === 0;
   const correctAns = isEN2CN ? w.cn : w.en;
   if (ok) {
@@ -1828,7 +1932,7 @@ function confirmThu() {
 /* ═══════ FRIDAY – STORY TIME! ═══════ */
 function initFri() {
   gs.storyPlaced = new Array(8).fill(null);
-  gs.fridayWordBank = shuffle(WORDS.map(w => w.en));
+  gs.fridayWordBank = shuffle(gs.words.map(w => w.en));
   renderFriStory();
   renderFriBank();
   renderPanel('fri');
@@ -1910,6 +2014,65 @@ function submitFri() {
   document.getElementById('fri-submit').className = '';
   renderPanel('fri');
   setTimeout(() => showComplete(), 1800);
+}
+
+/* ═══════ SATURDAY – WORD PARTY ═══════ */
+function initSat() {
+  const allWords = [...WEEK1_A, ...WEEK1_B];
+  let awake = 0;
+  const container = document.getElementById('sat-grid');
+  container.innerHTML = '';
+  document.getElementById('sat-counter').textContent = '0 / 20';
+  allWords.forEach((w, i) => {
+    const card = document.createElement('div');
+    card.className = 'sat-card sleeping';
+    const delay = (i * 0.15).toFixed(2);
+    card.innerHTML = '<div style="font-size:22px;animation:zzz-float 2s ease-in-out ' + delay + 's infinite;">💤</div>';
+    card.onclick = () => {
+      if (card.classList.contains('awake')) return;
+      card.classList.remove('sleeping');
+      card.classList.add('awake');
+      const isA = i < WEEK1_A.length;
+      card.style.background = isA ? 'rgba(0,224,120,.18)' : 'rgba(67,224,247,.18)';
+      card.style.borderColor = isA ? 'rgba(0,224,120,.5)' : 'rgba(67,224,247,.5)';
+      card.innerHTML = '<div class="sat-card-emoji">' + w.emoji + '</div><div class="sat-card-word">' + w.en + '</div>';
+      awake++;
+      document.getElementById('sat-counter').textContent = awake + ' / 20';
+      if (awake === 20) {
+        setTimeout(() => showOverlay('🎉', 'All 20 Words Awake!', 'You know every word from this week!', 'Awesome!', () => goHome(), false), 500);
+      }
+    };
+    container.appendChild(card);
+  });
+}
+
+/* ═══════ SUNDAY – MY COLLECTION ═══════ */
+function initSun() {
+  renderCollection('sun-col-a', WEEK1_A, 'a');
+  renderCollection('sun-col-b', WEEK1_B, 'b');
+}
+function renderCollection(containerId, words, group) {
+  const container = document.getElementById(containerId);
+  container.innerHTML = '';
+  words.forEach(w => {
+    const div = document.createElement('div');
+    div.className = 'sun-flip-card';
+    div.innerHTML =
+      '<div class="sun-flip-inner">' +
+        '<div class="sun-flip-front sun-flip-' + group + '">' +
+          '<span style="font-size:28px">' + w.emoji + '</span>' +
+        '</div>' +
+        '<div class="sun-flip-back sun-flip-' + group + '-back">' +
+          '<span style="font-size:22px">' + w.emoji + '</span>' +
+          '<div style="display:flex;flex-direction:column;margin-left:10px;">' +
+            '<span style="font-size:15px;font-weight:800;color:#fff">' + w.en + '</span>' +
+            '<span style="font-size:10px;color:rgba(255,255,255,.55)">' + w.cn + ' · ' + w.ph + '</span>' +
+          '</div>' +
+        '</div>' +
+      '</div>';
+    div.onclick = () => div.querySelector('.sun-flip-inner').classList.toggle('flipped');
+    container.appendChild(div);
+  });
 }
 
 /* ═══════ FEEDBACK / TOAST ═══════ */
@@ -1995,6 +2158,9 @@ function shuffle(arr) {
   window.addEventListener('resize', fit);
   window.addEventListener('orientationchange', () => setTimeout(fit, 150));
 })();
+
+// Initialize home screen
+initHomeUnlocks();
 </script>
 
 </div>
