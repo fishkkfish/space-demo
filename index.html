@@ -716,6 +716,7 @@ body{
 }
 .story-blank.wrong-filled{
   background:rgba(255,68,102,.15);border-bottom-color:#ff4466;color:#ff6680;cursor:default;
+  height:auto;min-height:24px;padding-bottom:2px;vertical-align:top;
 }
 
 #fri-bank-lbl{
@@ -1064,13 +1065,13 @@ body{
     <div class="hwp"><div class="hwp-bar done"></div><div class="hwp-lbl done">MON</div></div>
     <div class="hwp"><div class="hwp-bar done"></div><div class="hwp-lbl done">TUE</div></div>
     <div class="hwp"><div class="hwp-bar done"></div><div class="hwp-lbl done">WED</div></div>
-    <div class="hwp"><div class="hwp-bar today"></div><div class="hwp-lbl today">THU</div></div>
-    <div class="hwp"><div class="hwp-bar"></div><div class="hwp-lbl">FRI</div></div>
+    <div class="hwp"><div class="hwp-bar done"></div><div class="hwp-lbl done">THU</div></div>
+    <div class="hwp"><div class="hwp-bar today"></div><div class="hwp-lbl today">FRI</div></div>
   </div>
 
   <!-- Scrollable card strip — populated by initHomeUnlocks() -->
   <div id="h-scroll" class="">
-    <div id="h-cards"><div class="day-card done" onclick="startLesson(&#39;mon&#39;)"><div class="card-accent acc-mon"></div><div class="card-inner"><div class="card-day">Monday</div><div class="card-img-wrap"><div style="display:flex;align-items:center;justify-content:center;height:100%;font-size:72px">🍎</div></div></div><div class="card-type-lbl">Spell It!</div><div class="card-xp">+100 XP</div><div class="card-done-mark">✓</div></div><div class="day-card done" onclick="startLesson(&#39;tue&#39;)"><div class="card-accent acc-tue"></div><div class="card-inner"><div class="card-day">Tuesday</div><div class="card-img-wrap"><div style="display:flex;align-items:center;justify-content:center;height:100%;font-size:72px">🐶</div></div></div><div class="card-type-lbl">Hear It!</div><div class="card-xp">+100 XP</div><div class="card-done-mark">✓</div></div><div class="day-card done" onclick="startLesson(&#39;wed&#39;)"><div class="card-accent acc-wed"></div><div class="card-inner"><div class="card-day">Wednesday</div><div class="card-img-wrap"><div style="display:flex;align-items:center;justify-content:center;height:100%;font-size:72px">🍎</div></div></div><div class="card-type-lbl">Build It!</div><div class="card-xp">+100 XP</div><div class="card-done-mark">✓</div></div><div class="day-card today" onclick="startLesson(&#39;thu&#39;)"><div class="card-accent acc-thu"></div><div class="card-inner"><div class="card-day">Thursday</div><div class="card-img-wrap"><div style="display:flex;align-items:center;justify-content:center;height:100%;font-size:72px">🐯</div></div></div><div class="card-type-lbl">Translate It!</div><div class="card-xp">+100 XP</div><div class="card-today-tag">TODAY</div></div><div class="day-card locked"><div class="card-accent acc-lock"></div><div class="card-inner"><div class="card-day">Friday</div><div class="card-img-wrap"><div style="display:flex;align-items:center;justify-content:center;height:100%;font-size:72px;opacity:.3">📖</div></div></div><div class="card-type-lbl" style="opacity:.35">Story Time!</div><div class="card-xp" style="opacity:.3">+120 XP</div><div class="card-lock">🔒</div></div><div class="day-card locked"><div class="card-accent acc-lock"></div><div class="card-inner"><div class="card-day">Saturday</div><div class="card-img-wrap"><div style="display:flex;align-items:center;justify-content:center;height:100%;font-size:72px;opacity:.3">🎉</div></div></div><div class="card-type-lbl" style="opacity:.35">Word Party!</div><div class="card-xp" style="opacity:.3">Free!</div><div class="card-lock">🔒</div></div><div class="day-card locked"><div class="card-accent acc-lock"></div><div class="card-inner"><div class="card-day">Sunday</div><div class="card-img-wrap"><div style="display:flex;align-items:center;justify-content:center;height:100%;font-size:72px;opacity:.3">🌟</div></div></div><div class="card-type-lbl" style="opacity:.35">My Collection</div><div class="card-xp" style="opacity:.3">Free!</div><div class="card-lock">🔒</div></div></div>
+    <div id="h-cards"><div class="day-card done" onclick="startLesson(&#39;mon&#39;)"><div class="card-accent acc-mon"></div><div class="card-inner"><div class="card-day">Monday</div><div class="card-img-wrap"><div style="display:flex;align-items:center;justify-content:center;height:100%;font-size:72px">🍎</div></div></div><div class="card-type-lbl">Spell It!</div><div class="card-xp">+100 XP</div><div class="card-done-mark">✓</div></div><div class="day-card done" onclick="startLesson(&#39;tue&#39;)"><div class="card-accent acc-tue"></div><div class="card-inner"><div class="card-day">Tuesday</div><div class="card-img-wrap"><div style="display:flex;align-items:center;justify-content:center;height:100%;font-size:72px">🐶</div></div></div><div class="card-type-lbl">Hear It!</div><div class="card-xp">+100 XP</div><div class="card-done-mark">✓</div></div><div class="day-card done" onclick="startLesson(&#39;wed&#39;)"><div class="card-accent acc-wed"></div><div class="card-inner"><div class="card-day">Wednesday</div><div class="card-img-wrap"><div style="display:flex;align-items:center;justify-content:center;height:100%;font-size:72px">🍎</div></div></div><div class="card-type-lbl">Build It!</div><div class="card-xp">+100 XP</div><div class="card-done-mark">✓</div></div><div class="day-card done" onclick="startLesson(&#39;thu&#39;)"><div class="card-accent acc-thu"></div><div class="card-inner"><div class="card-day">Thursday</div><div class="card-img-wrap"><div style="display:flex;align-items:center;justify-content:center;height:100%;font-size:72px">🐯</div></div></div><div class="card-type-lbl">Translate It!</div><div class="card-xp">+100 XP</div><div class="card-done-mark">✓</div></div><div class="day-card today" onclick="startLesson(&#39;fri&#39;)"><div class="card-accent acc-fri"></div><div class="card-inner"><div class="card-day">Friday</div><div class="card-img-wrap"><div style="display:flex;align-items:center;justify-content:center;height:100%;font-size:72px">📖</div></div></div><div class="card-type-lbl">Story Time!</div><div class="card-xp">+120 XP</div><div class="card-today-tag">TODAY</div></div><div class="day-card locked"><div class="card-accent acc-lock"></div><div class="card-inner"><div class="card-day">Saturday</div><div class="card-img-wrap"><div style="display:flex;align-items:center;justify-content:center;height:100%;font-size:72px;opacity:.3">🎉</div></div></div><div class="card-type-lbl" style="opacity:.35">Word Party!</div><div class="card-xp" style="opacity:.3">Free!</div><div class="card-lock">🔒</div></div><div class="day-card locked"><div class="card-accent acc-lock"></div><div class="card-inner"><div class="card-day">Sunday</div><div class="card-img-wrap"><div style="display:flex;align-items:center;justify-content:center;height:100%;font-size:72px;opacity:.3">🌟</div></div></div><div class="card-type-lbl" style="opacity:.35">My Collection</div><div class="card-xp" style="opacity:.3">Free!</div><div class="card-lock">🔒</div></div></div>
   </div>
 </div>
 
@@ -1150,15 +1151,15 @@ body{
 
   <div id="tue-mcard">
     <div class="mc-glow"></div>
-    <div id="tue-q" style="display: block;">?</div>
-    <div id="tue-revealed" style="display: none;"></div>
-    <div class="mc-ph-bg"><div id="tue-ph">/kæt/</div></div>
+    <div id="tue-q">?</div>
+    <div id="tue-revealed"></div>
+    <div class="mc-ph-bg"><div id="tue-ph">/æpəl/</div></div>
   </div>
 
   <div id="tue-p-outer"></div>
   <div id="tue-p-mid"></div>
   <div id="tue-p-inner"></div>
-  <button id="tue-play" onclick="playAudio()" class="">▶</button>
+  <button id="tue-play" onclick="playAudio()">▶</button>
 
   <div id="tue-eq">
     <div class="eq-b" style="height:6px"></div>
@@ -1172,32 +1173,28 @@ body{
   <div id="tue-audio-hint">Tap ▶ to hear the word</div>
 
   <div class="ic" id="ic-0" style="left:316px;top:176px;" onclick="selectChoice(0)">
-    <div class="ic-img" id="ic-img-0" style="background: rgba(180, 140, 80, 0.12);">🐶</div>
+    <div class="ic-img" id="ic-img-0" style="background:rgba(46,217,115,.12)"></div>
     <div class="ic-div"></div>
-    <div class="ic-lbl" id="ic-lbl-0">dog</div>
+    <div class="ic-lbl" id="ic-lbl-0"></div>
   </div>
   <div class="ic" id="ic-1" style="left:480px;top:176px;" onclick="selectChoice(1)">
-    <div class="ic-img" id="ic-img-1" style="background: rgba(180, 120, 60, 0.12);">🐻</div>
+    <div class="ic-img" id="ic-img-1" style="background:rgba(255,229,51,.12)"></div>
     <div class="ic-div"></div>
-    <div class="ic-lbl" id="ic-lbl-1">bear</div>
+    <div class="ic-lbl" id="ic-lbl-1"></div>
   </div>
   <div class="ic" id="ic-2" style="left:316px;top:284px;" onclick="selectChoice(2)">
-    <div class="ic-img" id="ic-img-2" style="background: rgba(255, 200, 100, 0.12);">🐱</div>
+    <div class="ic-img" id="ic-img-2" style="background:rgba(255,153,51,.12)"></div>
     <div class="ic-div"></div>
-    <div class="ic-lbl" id="ic-lbl-2">cat</div>
+    <div class="ic-lbl" id="ic-lbl-2"></div>
   </div>
   <div class="ic" id="ic-3" style="left:480px;top:284px;" onclick="selectChoice(3)">
-    <div class="ic-img" id="ic-img-3" style="background: rgba(255, 180, 200, 0.12);">🐰</div>
+    <div class="ic-img" id="ic-img-3" style="background:rgba(148,89,255,.12)"></div>
     <div class="ic-div"></div>
-    <div class="ic-lbl" id="ic-lbl-3">rabbit</div>
+    <div class="ic-lbl" id="ic-lbl-3"></div>
   </div>
   <div id="tue-sel-hint">Select the image you heard ↑</div>
-  <button id="tue-confirm" onclick="confirmChoice()" class="">Confirm ✓</button>
-  <div class="rpanel" id="tue-rp"><div class="rp-scroll">
-    <div class="rp-lbl">Lives</div><div class="rp-hearts"><div class="rp-heart"></div><div class="rp-heart"></div><div class="rp-heart"></div></div>
-    <div class="rp-xp-lbl">XP &nbsp;120 / 200</div>
-    <div class="rp-xp-track"><div class="rp-xp-fill xpf-tue" style="width:60%"></div></div>
-    <div class="rp-sep"></div><div class="rp-week">This Week</div><div class="rp-row cur-tue"><div class="rp-bar"></div><div class="rp-dot"></div><span class="rp-en">cat</span><span class="rp-cn">猫</span></div><div class="rp-row"><div class="rp-bar"></div><div class="rp-dot"></div><span class="rp-en">dog</span><span class="rp-cn">狗</span></div><div class="rp-row"><div class="rp-bar"></div><div class="rp-dot"></div><span class="rp-en">bird</span><span class="rp-cn">鸟</span></div><div class="rp-row"><div class="rp-bar"></div><div class="rp-dot"></div><span class="rp-en">fish</span><span class="rp-cn">鱼</span></div><div class="rp-row"><div class="rp-bar"></div><div class="rp-dot"></div><span class="rp-en">bear</span><span class="rp-cn">熊</span></div><div class="rp-row"><div class="rp-bar"></div><div class="rp-dot"></div><span class="rp-en">lion</span><span class="rp-cn">狮子</span></div><div class="rp-row"><div class="rp-bar"></div><div class="rp-dot"></div><span class="rp-en">tiger</span><span class="rp-cn">老虎</span></div><div class="rp-row"><div class="rp-bar"></div><div class="rp-dot"></div><span class="rp-en">rabbit</span><span class="rp-cn">兔子</span></div><div class="rp-row"><div class="rp-bar"></div><div class="rp-dot"></div><span class="rp-en">elephant</span><span class="rp-cn">大象</span></div><div class="rp-row"><div class="rp-bar"></div><div class="rp-dot"></div><span class="rp-en">horse</span><span class="rp-cn">马</span></div></div></div>
+  <button id="tue-confirm" onclick="confirmChoice()">Confirm ✓</button>
+  <div class="rpanel" id="tue-rp"></div>
 </div>
 
 <!-- ═══════════════ WEDNESDAY – BUILD IT! ═══════════════ -->
@@ -1245,33 +1242,29 @@ body{
   <div class="lesson-nav">
     <button class="btn-back" onclick="goHome()">←</button>
     <div class="nav-ttl">Thursday · Translate It!</div>
-    <div class="streak-bdg" id="thu-streak">🔥 x13</div>
+    <div class="streak-bdg" id="thu-streak">🔥 x3</div>
   </div>
-  <div class="prog-track"><div class="prog-fill prog-thu" id="thu-prog" style="width: 100%;"></div></div>
+  <div class="prog-track"><div class="prog-fill prog-thu" id="thu-prog" style="width:0%"></div></div>
 
   <!-- Question card -->
   <div id="thu-qcard">
-    <div id="thu-q-emoji">🐴</div>
+    <div id="thu-q-emoji">🍎</div>
     <div class="thu-q-text">
-      <div id="thu-q-word">马</div>
-      <div id="thu-q-ph">/hɔːrs/</div>
+      <div id="thu-q-word">apple</div>
+      <div id="thu-q-ph">/æpəl/</div>
     </div>
-    <div id="thu-q-dir">中文 → EN</div>
+    <div id="thu-q-dir">EN → 中文</div>
   </div>
-  <div id="thu-round">10 / 10</div>
+  <div id="thu-round">1 / 8</div>
 
   <!-- 4 choices: 2×2 grid -->
-  <button class="thu-choice" id="thu-c0" style="left:24px;top:170px;" onclick="selectThu(0)">tiger</button>
-  <button class="thu-choice selected correct-sel" id="thu-c1" style="left:260px;top:170px;" onclick="selectThu(1)">horse</button>
-  <button class="thu-choice" id="thu-c2" style="left:24px;top:254px;" onclick="selectThu(2)">elephant</button>
-  <button class="thu-choice" id="thu-c3" style="left:260px;top:254px;" onclick="selectThu(3)">lion</button>
+  <button class="thu-choice" id="thu-c0" style="left:24px;top:170px;" onclick="selectThu(0)"></button>
+  <button class="thu-choice" id="thu-c1" style="left:260px;top:170px;" onclick="selectThu(1)"></button>
+  <button class="thu-choice" id="thu-c2" style="left:24px;top:254px;" onclick="selectThu(2)"></button>
+  <button class="thu-choice" id="thu-c3" style="left:260px;top:254px;" onclick="selectThu(3)"></button>
 
-  <button id="thu-confirm" onclick="confirmThu()" class="">Confirm ✓</button>
-  <div class="rpanel" id="thu-rp"><div class="rp-scroll">
-    <div class="rp-lbl">Lives</div><div class="rp-hearts"><div class="rp-heart"></div><div class="rp-heart"></div><div class="rp-heart"></div></div>
-    <div class="rp-xp-lbl">XP &nbsp;200 / 200</div>
-    <div class="rp-xp-track"><div class="rp-xp-fill xpf-thu" style="width:100%"></div></div>
-    <div class="rp-sep"></div><div class="rp-week">This Week</div><div class="rp-row done"><div class="rp-bar"></div><div class="rp-dot"></div><span class="rp-en">cat</span><span class="rp-cn">猫</span></div><div class="rp-row done"><div class="rp-bar"></div><div class="rp-dot"></div><span class="rp-en">dog</span><span class="rp-cn">狗</span></div><div class="rp-row done"><div class="rp-bar"></div><div class="rp-dot"></div><span class="rp-en">bird</span><span class="rp-cn">鸟</span></div><div class="rp-row done"><div class="rp-bar"></div><div class="rp-dot"></div><span class="rp-en">fish</span><span class="rp-cn">鱼</span></div><div class="rp-row done"><div class="rp-bar"></div><div class="rp-dot"></div><span class="rp-en">bear</span><span class="rp-cn">熊</span></div><div class="rp-row done"><div class="rp-bar"></div><div class="rp-dot"></div><span class="rp-en">lion</span><span class="rp-cn">狮子</span></div><div class="rp-row done"><div class="rp-bar"></div><div class="rp-dot"></div><span class="rp-en">tiger</span><span class="rp-cn">老虎</span></div><div class="rp-row done"><div class="rp-bar"></div><div class="rp-dot"></div><span class="rp-en">rabbit</span><span class="rp-cn">兔子</span></div><div class="rp-row done"><div class="rp-bar"></div><div class="rp-dot"></div><span class="rp-en">elephant</span><span class="rp-cn">大象</span></div><div class="rp-row done"><div class="rp-bar"></div><div class="rp-dot"></div><span class="rp-en">horse</span><span class="rp-cn">马</span></div></div></div>
+  <button id="thu-confirm" onclick="confirmThu()">Confirm ✓</button>
+  <div class="rpanel" id="thu-rp"></div>
 </div>
 
 <!-- ═══════════════ FRIDAY – STORY TIME! ═══════════════ -->
@@ -1350,14 +1343,14 @@ body{
 <div id="complete" class="screen">
   <div class="cbox">
     <div class="c-emo">🎉</div>
-    <div class="c-title thu" id="c-title">Lesson Complete!</div>
-    <div class="c-sub" id="c-sub">Translation master! Fantastic! 🌐</div>
+    <div class="c-title" id="c-title">Lesson Complete!</div>
+    <div class="c-sub" id="c-sub">Great work! You're on fire!</div>
     <div class="c-stats">
-      <div class="c-stat"><div class="c-val thu" id="c-words">10</div><div class="c-lbl">Words Done</div></div>
-      <div class="c-stat"><div class="c-val thu" id="c-xp">+80</div><div class="c-lbl">XP Gained</div></div>
-      <div class="c-stat"><div class="c-val thu" id="c-acc">100%</div><div class="c-lbl">Accuracy</div></div>
+      <div class="c-stat"><div class="c-val" id="c-words">8</div><div class="c-lbl">Words Done</div></div>
+      <div class="c-stat"><div class="c-val" id="c-xp">+80</div><div class="c-lbl">XP Gained</div></div>
+      <div class="c-stat"><div class="c-val" id="c-acc">100%</div><div class="c-lbl">Accuracy</div></div>
     </div>
-    <button class="btn-home thu" id="btn-home-c" onclick="goHome()">← Back to Home</button>
+    <button class="btn-home" id="btn-home-c" onclick="goHome()">← Back to Home</button>
   </div>
 </div>
 
@@ -1371,7 +1364,7 @@ body{
   </div>
 </div>
 
-<div id="toast" class="">✓ Correct! +10 XP</div>
+<div id="toast"></div>
 
 <script>
 /* ═══════ DATA ═══════ */
@@ -1414,19 +1407,18 @@ const IC_BG = {
   rabbit:'rgba(255,180,200,.12)',elephant:'rgba(150,150,200,.12)',horse:'rgba(200,160,100,.12)'
 };
 
-/* Friday story — 8 blanks mixing A+B: bear,rabbit,apple,lemon,dog,bird,mango,tiger */
+/* Friday story — 7 blanks mixing A+B: apple, dog, bird, bear, rabbit, mango, tiger */
 const STORY_PARTS = [
-  "Sam went to the farm. He saw a big ",
-  " near the fence. A little ",
-  " hopped past. He picked a red ",
-  " from the tree and a sour ",
-  " on the ground. Then a friendly ",
-  " ran over wagging its tail. High above, a ",
-  " sang sweetly. Sam packed a juicy ",
-  " in his basket when suddenly a striped ",
-  " appeared at the forest edge!"
+  "Li Lei loves animals and fruit! Every morning he eats a crunchy red ",
+  " for breakfast. His pet ",
+  " barks and wags its tail. Outside, a little ",
+  " sings on the branch. In the park, Li Lei meets a big brown ",
+  ". A fluffy white ",
+  " hops nearby. After the walk, he drinks a yellow tropical ",
+  " smoothie. Then he spots a striped ",
+  " at the zoo — amazing!"
 ];
-const STORY_ANSWERS = ['bear','rabbit','apple','lemon','dog','bird','mango','tiger'];
+const STORY_ANSWERS = ['apple','dog','bird','bear','rabbit','mango','tiger'];
 
 /* ═══════ HELPERS ═══════ */
 function getWords(day) {
@@ -1931,8 +1923,11 @@ function confirmThu() {
 
 /* ═══════ FRIDAY – STORY TIME! ═══════ */
 function initFri() {
-  gs.storyPlaced = new Array(8).fill(null);
-  gs.fridayWordBank = shuffle(gs.words.map(w => w.en));
+  gs.storyPlaced = new Array(STORY_ANSWERS.length).fill(null);
+  // Bank = 7 correct answers + 3 random distractors from the rest, shuffled
+  const pool = gs.words.map(w => w.en).filter(w => !STORY_ANSWERS.includes(w));
+  const distractors = shuffle(pool).slice(0, 3);
+  gs.fridayWordBank = shuffle([...STORY_ANSWERS, ...distractors]);
   renderFriStory();
   renderFriBank();
   renderPanel('fri');
@@ -1940,9 +1935,9 @@ function initFri() {
 
 function renderFriStory() {
   const container = document.getElementById('fri-story');
-  let html = STORY_PARTS[0];
+  let html = STORY_PARTS[0] || '';
   let currentBlank = gs.storyPlaced.indexOf(null);
-  for (let i=0; i<8; i++) {
+  for (let i=0; i<STORY_ANSWERS.length; i++) {
     const filled = gs.storyPlaced[i];
     const isCurrent = i === currentBlank;
     if (filled) {
@@ -1952,7 +1947,7 @@ function renderFriStory() {
     } else {
       html += `<span class="story-blank empty">_ _ _ _</span>`;
     }
-    html += STORY_PARTS[i+1];
+    html += STORY_PARTS[i+1] || '';
   }
   container.innerHTML = html;
 }
@@ -1998,17 +1993,21 @@ function submitFri() {
     if (word === STORY_ANSWERS[i]) { correct++; gs.done.push(i); }
   });
   gs.correct = correct;
-  gs.wrong = 8 - correct;
+  gs.wrong = STORY_ANSWERS.length - correct;
   gs.xp = Math.min(200, 120 + correct * 10);
 
   // Render story with correct/wrong highlights
   const container = document.getElementById('fri-story');
-  let html = STORY_PARTS[0];
-  for (let i=0; i<8; i++) {
-    const word = gs.storyPlaced[i];
+  let html = STORY_PARTS[0] || '';
+  for (let i=0; i<STORY_ANSWERS.length; i++) {
+    const word = gs.storyPlaced[i] || '';
     const isCorrect = word === STORY_ANSWERS[i];
-    html += `<span class="story-blank ${isCorrect ? 'correct-filled' : 'wrong-filled'}">${word}</span>`;
-    html += STORY_PARTS[i+1];
+    if (isCorrect) {
+      html += `<span class="story-blank correct-filled">${word}</span>`;
+    } else {
+      html += `<span class="story-blank wrong-filled">${word}<span style="display:block;font-size:10px;color:#00E078;font-weight:900;line-height:1.2;">✓ ${STORY_ANSWERS[i] || ''}</span></span>`;
+    }
+    html += STORY_PARTS[i+1] || '';
   }
   container.innerHTML = html;
   document.getElementById('fri-submit').className = '';
